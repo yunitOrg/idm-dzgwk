@@ -1,9 +1,11 @@
 <template>
+  <a-config-provider :locale="locale">
     <component :is="`${componentName}`" @hook:mounted="handleComponentMounted" :ref="`${componentName}`"/>
+  </a-config-provider>
 </template>
 
 <script>
-
+import zhCN from 'ant-design-vue/lib/locale-provider/zh_CN';
 export default {
   name: 'Main',
   components: {
@@ -11,7 +13,8 @@ export default {
   },
   data(){
     return {
-      componentName: this.$root.componentName
+      componentName: this.$root.componentName,
+      locale: zhCN,
     }
   },
   props: {
@@ -37,6 +40,5 @@ export default {
 </script>
 
 <style lang="scss">
-#app{
-}
+@import url("./styles/flex.scss");
 </style>

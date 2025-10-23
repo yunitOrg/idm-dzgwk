@@ -3,6 +3,7 @@ import './core/regModule';
 import config from '../public/static/config.json';
 //引入图标
 import '@/icons' // icon
+import "@/plugins/antd"
 
 const requireComponent = require.context(
   // 其组件目录的相对路径
