@@ -21,36 +21,11 @@
       "desc": "提供设置组件能达到展示效果的基本属性设置信息",
       "children": [
         {
-          "type": "textarea",
+          "type": "inputNumber",
           "layoutType": "inline",
-          "text": "文本内容",
-          "bindKey": "fontContent",
-          "default": "文本内容"
-        },
-        {
-          "type": "switch",
-          "layoutType": "inline",
-          "text": "title",
-          "bindKey": "htmlTitle",
-          "desc": "将内容显示为html标签的title，也就是鼠标放上去会有显示文本内容的文字",
-          "disabled": false
-        },
-        {
-          "type": "radio",
-          "layoutType": "inline",
-          "text": "默认状态",
-          "bindKey": "defaultStatus",
-          "dictionary": [
-            {
-              "label": "普通",
-              "value": "default"
-            },
-            {
-              "label": "隐藏",
-              "value": "hidden"
-            }
-          ],
-          "default": "default"
+          "text": "分页大小",
+          "bindKey": "pageSize",
+          "default": 12
         }
       ]
     },

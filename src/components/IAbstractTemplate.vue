@@ -70,6 +70,7 @@ export default {
   },
   created() {
     this.moduleObject = this.$root.moduleObject;
+    this.pageSize = this.propData.pageSize || 12;
     this.handleCustomFunction();
     this.convertAttrToStyleObject();
     this.initData(true);
