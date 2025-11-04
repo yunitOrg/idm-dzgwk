@@ -21,6 +21,30 @@
       "desc": "提供设置组件能达到展示效果的基本属性设置信息",
       "children": [
         {
+          "type": "input",
+          "layoutType": "inline",
+          "text": "摘要提示",
+          "bindKey": "abstractPlaceholder",
+          "desc": "摘要编辑器提示语",
+          "default": "请输入摘要指令"
+        },
+        {
+          "type": "input",
+          "layoutType": "inline",
+          "text": "搜索提示",
+          "bindKey": "searchPlaceholder",
+          "desc": "搜索框提示语",
+          "default": "请输入内容进行搜索"
+        },
+        {
+          "type": "inputNumber",
+          "layoutType": "inline",
+          "text": "指令行高",
+          "bindKey": "rows",
+          "desc": "摘要指令文本域的可输入展示的行数",
+          "default": 4
+        },
+        {
           "type": "inputNumber",
           "layoutType": "inline",
           "text": "分页大小",

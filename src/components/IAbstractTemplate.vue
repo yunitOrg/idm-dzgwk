@@ -2,13 +2,13 @@
   <div idm-ctrl="idm_module" :id="moduleObject.id" :idm-ctrl-id="moduleObject.id" class="IAbstractTemplate_app">
     <div class="IAbstractTemplate_app_header">
       <div class="input_box">
-        <a-textarea v-model="abstractValue" placeholder="请输入摘要指令" :rows="4" allowClear />
+        <a-textarea v-model="abstractValue" :placeholder="propData?.abstractPlaceholder" :rows="propData.rows" allowClear />
       </div>
     </div>
     <div class="IAbstractTemplate_app_main">
       <div class="search_block flex_between">
         <div class="input_box">
-          <a-input v-model="keywords" placeholder="请输入内容进行搜索" allowClear />
+          <a-input v-model="keywords" :placeholder="propData?.searchPlaceholder" allowClear />
         </div>
         <div class="btn_box">
           <a-button @click="handleSearch()" type="primary">搜索</a-button>
