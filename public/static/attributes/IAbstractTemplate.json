@@ -427,6 +427,14 @@
         {
           "type": "actionSelect",
           "layoutType": "block",
+          "text": "点击摘要时动作",
+          "bindKey": "clickItemFunction",
+          "desc": "点击摘要的时候会调用设置的自定义函数，接收参数为格式为{_this, item}",
+          "multiple": true
+        },
+        {
+          "type": "actionSelect",
+          "layoutType": "block",
           "text": "点击确定时动作",
           "bindKey": "clickSubmitFunction",
           "desc": "点击的时候会调用设置的自定义函数，接收参数为格式为{...自定义的}",

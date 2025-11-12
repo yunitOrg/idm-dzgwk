@@ -98,7 +98,14 @@ export default {
       }])
     },
     handleClickItem(item) {
-      this.abstractValue = item[this.propData.templateField];
+      if(this.propData.clickItemFunction?.length) {
+        IDM.invokeCustomFunctions.apply(this,[this.propData.clickItemFunction,{
+          _this: this,
+          item: item,
+        }])
+      } else {
+        this.abstractValue = item[this.propData.templateField];
+      }
     },
     handleSearch() {
       this.initData(true);
